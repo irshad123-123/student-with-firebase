@@ -39,7 +39,7 @@
                             </div>
                             <button type="submit" id="addStudent" class="btn btn-outline-primary btn-block">Add
                                 Student</button>
-                            <button type="button" id="addStudent"
+                            <button type="button" id="updateStudent"
                                 class="btn btn-outline-primary btn-block d-none">Update Student</button>
                         </div>
                     </div>
@@ -50,20 +50,21 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2 mt-2">
-                <table class="table table-bordered bg-white">
-                    <thead>
-                        <tr>
-                            <th>Sr. No</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email</th>
-                            <th>Contact</th>
-                            <th>Edit</th>
-                            <th>Remove</th>
-                        </tr>
-                    </thead>
-                    <tbody id="studentContainer">
-                        <tr>
+                <div class="table-responsive">
+                    <table class="table table-bordered bg-white">
+                        <thead>
+                            <tr>
+                                <th>Sr. No</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentContainer">
+                            <!-- <tr>
                             <td>1</td>
                             <td>Jhon</td>
                             <td>Doe</td>
@@ -73,9 +74,10 @@
                                     role="button"></i></td>
                             <td class="text-center"><i class="fa-solid fa-trash fa-2x text-danger" role="button"></i>
                             </td>
-                        </tr>
-                    </tbody>
-                </table>
+                        </tr> -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -85,6 +87,7 @@
         </div>
     </div>
     <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
